@@ -13,3 +13,10 @@ How to run under linux:
 ==========================
 
 ./first_program
+
+
+All in one command example for `find_prime_number.asm`
+==========================
+
+F="find_prime_number"; clear; nasm -f elf "$F".asm; gcc -o $F "$F".o lib/driver.c lib/asm_io.o; ./$F
+
